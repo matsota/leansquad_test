@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Alert WithOK-->
+        <scene sceneID="7XM-0D-3kZ">
+            <objects>
+                <viewController storyboardIdentifier="AlertWithOK" id="sn7-yb-55g" customClass="AlertWithOK" customModule="Leansquad_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dn4-1D-C0q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbB-Cz-Hnb">
+                                <rect key="frame" x="-50" y="-56" width="514" height="1018"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="64" maxX="24" maxY="0.0"/>
+                                <connections>
+                                    <action selector="dismissAction:" destination="sn7-yb-55g" eventType="touchUpInside" id="sxI-6u-DCG"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="RG3-a9-WW9">
+                                <rect key="frame" x="375" y="60" width="25" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="byj-Ub-3MP"/>
+                                    <constraint firstAttribute="width" secondItem="RG3-a9-WW9" secondAttribute="height" multiplier="1:1" id="dCY-7G-BAQ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HO6-Ij-gPJ">
+                                <rect key="frame" x="52" y="447" width="310.5" height="12"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aly-Wk-nro">
+                                        <rect key="frame" x="0.0" y="4" width="310.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="stf-cj-ttx">
+                                        <rect key="frame" x="0.0" y="8" width="310.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="stf-cj-ttx" firstAttribute="top" secondItem="Aly-Wk-nro" secondAttribute="bottom" constant="4" id="8Zy-4q-AVb"/>
+                                    <constraint firstItem="stf-cj-ttx" firstAttribute="leading" secondItem="HO6-Ij-gPJ" secondAttribute="leading" id="8kA-Qx-gPF"/>
+                                    <constraint firstAttribute="trailing" secondItem="Aly-Wk-nro" secondAttribute="trailing" id="L50-rA-hLW"/>
+                                    <constraint firstItem="Aly-Wk-nro" firstAttribute="leading" secondItem="HO6-Ij-gPJ" secondAttribute="leading" id="VBo-Pf-PP8"/>
+                                    <constraint firstAttribute="trailing" secondItem="stf-cj-ttx" secondAttribute="trailing" id="iuw-Xc-BGe"/>
+                                    <constraint firstAttribute="bottom" secondItem="stf-cj-ttx" secondAttribute="bottom" constant="4" id="oZ2-hI-T4a"/>
+                                    <constraint firstItem="Aly-Wk-nro" firstAttribute="top" secondItem="HO6-Ij-gPJ" secondAttribute="top" constant="4" id="y3Q-Xx-y7w"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rbD-Hx-u4A"/>
+                        <constraints>
+                            <constraint firstItem="rbD-Hx-u4A" firstAttribute="bottom" secondItem="xbB-Cz-Hnb" secondAttribute="bottom" constant="-100" id="MqX-Gu-ytW"/>
+                            <constraint firstItem="xbB-Cz-Hnb" firstAttribute="leading" secondItem="rbD-Hx-u4A" secondAttribute="leading" constant="-50" id="Xve-DE-jx4"/>
+                            <constraint firstItem="HO6-Ij-gPJ" firstAttribute="centerX" secondItem="rbD-Hx-u4A" secondAttribute="centerX" id="e1g-Jg-7Cy"/>
+                            <constraint firstItem="RG3-a9-WW9" firstAttribute="top" secondItem="rbD-Hx-u4A" secondAttribute="top" constant="14" id="gLw-Vg-nHx"/>
+                            <constraint firstItem="HO6-Ij-gPJ" firstAttribute="centerY" secondItem="rbD-Hx-u4A" secondAttribute="centerY" id="h2y-e7-9hz"/>
+                            <constraint firstItem="rbD-Hx-u4A" firstAttribute="trailing" secondItem="xbB-Cz-Hnb" secondAttribute="trailing" constant="-50" id="hAj-1p-swO"/>
+                            <constraint firstItem="rbD-Hx-u4A" firstAttribute="trailing" secondItem="RG3-a9-WW9" secondAttribute="trailing" constant="14" id="jdS-W0-0oD"/>
+                            <constraint firstItem="xbB-Cz-Hnb" firstAttribute="top" secondItem="rbD-Hx-u4A" secondAttribute="top" constant="-100" id="lnt-4o-KOD"/>
+                            <constraint firstItem="HO6-Ij-gPJ" firstAttribute="height" relation="lessThanOrEqual" secondItem="rbD-Hx-u4A" secondAttribute="height" multiplier="0.8" id="sRH-ml-SdX"/>
+                            <constraint firstItem="HO6-Ij-gPJ" firstAttribute="width" secondItem="rbD-Hx-u4A" secondAttribute="width" multiplier="0.75" id="zbL-kl-Qnt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="HO6-Ij-gPJ" id="Fvm-gK-VEC"/>
+                        <outlet property="bodyLabel" destination="stf-cj-ttx" id="FUM-ly-h1l"/>
+                        <outlet property="dismissButton" destination="xbB-Cz-Hnb" id="IBw-uW-JbL"/>
+                        <outlet property="titleLabel" destination="Aly-Wk-nro" id="H3b-0h-mUn"/>
+                        <outlet property="xMarkImageView" destination="RG3-a9-WW9" id="qWE-Sb-oex"/>
+                        <outletCollection property="labelCollection" destination="Aly-Wk-nro" collectionClass="NSMutableArray" id="v3P-Hn-vjS"/>
+                        <outletCollection property="labelCollection" destination="stf-cj-ttx" collectionClass="NSMutableArray" id="YvF-Ln-npS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z0N-7u-ubf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-307" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
